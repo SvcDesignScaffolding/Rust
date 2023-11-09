@@ -1,0 +1,12 @@
+- name: set artifact cluster with vhosts
+  hosts: all
+  user: root
+  become: yes
+  gather_facts: yes
+  tasks:
+    - include_role:
+        name: app
+      vars:
+        group: master
+        auto_issuance: false
+        update_secret: false
