@@ -1,5 +1,5 @@
 # 第一个阶段：构建 Rust 二进制文件
-FROM rust:1.60.0-slim-buster as builder
+FROM rust:1.72.1-slim-buster as builder
 
 WORKDIR /app
 COPY . .
